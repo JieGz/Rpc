@@ -26,14 +26,14 @@ public class ByteConverter {
 	 * @return
 	 */
 	public static long bytesToLong(byte[] buf) {
-		return (long) buf[0] & 0xffl
-				| (((long) buf[1] << 8) & 0xff00l)
-				| (((long) buf[2] << 16) & 0xff0000l)
-				| (((long) buf[3] << 24) & 0xff000000l)
-				| (((long) buf[4] << 32) & 0xff00000000l)
-				| (((long) buf[5] << 40) & 0xff0000000000l)
-				| (((long) buf[6] << 48) & 0xff000000000000l)
-				| (((long) buf[7] << 56) & 0xff00000000000000l);
+		return (long) buf[0] & 0xffL
+				| (((long) buf[1] << 8) & 0xff00L)
+				| (((long) buf[2] << 16) & 0xff0000L)
+				| (((long) buf[3] << 24) & 0xff000000L)
+				| (((long) buf[4] << 32) & 0xff00000000L)
+				| (((long) buf[5] << 40) & 0xff0000000000L)
+				| (((long) buf[6] << 48) & 0xff000000000000L)
+				| (((long) buf[7] << 56) & 0xff00000000000000L);
 	}
 
 
@@ -80,13 +80,13 @@ public class ByteConverter {
 	}
 
 	public static long bytesToLong(byte[] buf, int offset) {
-		return (long) buf[offset] & 0xffl
-				| (((long) buf[offset + 1] << 8) & 0xff00l)
-				| (((long) buf[offset + 2] << 16) & 0xff0000l)
-				| (((long) buf[offset + 3] << 24) & 0xff000000l)
-				| (((long) buf[offset + 4] << 32) & 0xff00000000l)
-				| (((long) buf[offset + 5] << 40) & 0xff0000000000l)
-				| (((long) buf[offset + 6] << 48) & 0xff000000000000l)
-				| (((long) buf[offset + 7] << 56) & 0xff00000000000000l);
+		return (long) buf[offset] & 0xffL
+				| (((long) buf[offset + 1] << 8) & 0xff00L)
+				| (((long) buf[offset + 2] << 16) & 0xff0000L)
+				| (((long) buf[offset + 3] << 24) & 0xff000000L)
+				| (((long) buf[offset + 4] << 32) & 0xff00000000L)
+				| (((long) buf[offset + 5] << 40) & 0xff0000000000L)
+				| (((long) buf[offset + 6] << 48) & 0xff000000000000L)
+				| (((long) buf[offset + 7] << 56) & 0xff00000000000000L);
 	}
 }

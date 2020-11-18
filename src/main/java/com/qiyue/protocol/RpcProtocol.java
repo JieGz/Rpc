@@ -8,13 +8,14 @@ import java.io.*;
 
 public class RpcProtocol implements Serializable {
 
+	final public static int HEAD_LEN = 16;
+
 	public static int CMD_CREATE_USER = 1;
 	private int version;
 	private int cmd;
 	private int magicNum;
 	private int bodyLen = 0;
 	private byte[] body;
-	final public static int HEAD_LEN = 16;
 
 	public byte[] getBody() {
 		return body;
