@@ -11,6 +11,8 @@ public class RpcProtocol implements Serializable {
 	final public static int HEAD_LEN = 16;
 
 	public static int CMD_CREATE_USER = 1;
+	static public int CONST_CMD_MAGIC = 0x20110711;
+
 	private int version;
 	private int cmd;
 	private int magicNum;
