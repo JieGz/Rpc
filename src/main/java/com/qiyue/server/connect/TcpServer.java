@@ -10,7 +10,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * 像端口这样的参数,不应该放在代码里,应该抽象到配置中心当中
+ */
 public class TcpServer {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
