@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 
 public class RpcServer {
 
-	private static Logger logger = LoggerFactory.getLogger(RpcServer.class);
-	private static int SERVER_LISTEN_PORT = 58885;
+	private static final Logger logger = LoggerFactory.getLogger(RpcServer.class);
+	private static final int SERVER_LISTEN_PORT = 58885;
 
 	public static void main(String[] args) throws Exception {
 		Thread tcpServerThread = new Thread("tcpServer") {
