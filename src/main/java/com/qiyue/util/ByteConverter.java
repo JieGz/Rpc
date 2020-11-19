@@ -1,5 +1,8 @@
 package com.qiyue.util;
 
+/**
+ * 这可能是目前看起来比较优秀的代码了
+ */
 public class ByteConverter {
 
 	/**
