@@ -5,7 +5,9 @@ import com.qiyue.server.connect.TcpServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * 下一步是接入注册中心,先接入Zookeeper,然后再接入Nacos
+ */
 public class RpcServer {
 
 	private static final Logger logger = LoggerFactory.getLogger(RpcServer.class);
